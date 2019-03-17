@@ -1,0 +1,99 @@
+@import 'colors';
+@import 'font';
+
+body {
+  background-color:#fdfdfd;
+  color: #333;
+}
+
+#bg {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+  background-color: color(primary);
+  // background-image: url('../images/blur.jpg');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+nav, section#head {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  
+}
+
+#header {
+  padding: 10px 0;
+  background-color: color(accent);
+  height: 50px;
+
+  .logo {
+    flex: 1;
+    img {
+      width: 100px;
+    }
+  }
+  .nav-menu {
+    margin-top: 2px;
+    flex: 6;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        color: black;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .right-header {
+    flex: 1;
+  }
+
+}
+
+section#head {
+  align-items: center;
+  height: 90vh;
+
+  #logo {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  #header-content{
+    flex: 2;
+
+    h1{
+      margin:0;
+      text-transform: uppercase;
+    }
+    h2{
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6em;
+    }
+    a {
+      // border: 1px black solid;
+      border-radius: 15px;
+      padding: 10px 20px;
+      background: color(accent);
+      font-size: 14px;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+    }
+    a:hover {
+      background: salmon;
+    }
+  }
+}
